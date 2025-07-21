@@ -41,7 +41,7 @@ export async function sendContactEmail(data: ContactFormInputs): Promise<{ succe
 
   try {
     const { data: emailData, error } = await resend.emails.send({
-      from: 'Ascher Designs <' + toEmail + '>',
+      from: 'Ascher Designs <onboarding@resend.dev>',
       to: [toEmail],
       reply_to: email,
       subject: 'New Inquiry from Ascher Designs Website',
