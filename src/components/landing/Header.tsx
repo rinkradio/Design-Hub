@@ -5,12 +5,11 @@ import { Menu } from 'lucide-react';
 
 const Logo = () => (
   <Link href="/" className="flex items-center gap-2">
-     <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
-        <rect width="100%" height="100%" fill="#4CAF50"/> {/* Example green background */}
-        <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontFamily="sans-serif" fontSize="40" fill="#C7B299">ASCHER</text>
-        <text x="50%" y="65%" dominantBaseline="middle" textAnchor="middle" fontFamily="sans-serif" fontSize="20" fill="#C7B299">INTERIOR DESIGN</text>
-        {/* Simplified 'A' with window icon - conceptual representation */}
-        <path d="M150 30 L130 70 L170 70 Z M145 55 L155 55 L155 65 L145 65 Z" fill="#C7B29d9"/>
+     <svg width="150" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" className="h-10 w-auto">
+        {/* Example green background */}
+        <rect width="100%" height="100%" fill="hsl(var(--primary))"/> 
+        <text x="50%" y="45%" dominantBaseline="middle" textAnchor="middle" fontFamily="Alegreya" fontSize="40" fill="hsl(var(--primary-foreground))" fontWeight="bold">ASCHER</text>
+        <text x="50%" y="65%" dominantBaseline="middle" textAnchor="middle" fontFamily="Alegreya" fontSize="20" fill="hsl(var(--primary-foreground))">INTERIOR DESIGN</text>
     </svg>
   </Link>
 );
