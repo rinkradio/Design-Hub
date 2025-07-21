@@ -49,11 +49,11 @@ const AIAssistant = () => {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center">
-            <h2 className="text-3xl font-bold font-headline text-primary sm:text-4xl">AI Design Assistant</h2>
+            <h2 className="text-3xl font-bold font-headline text-accent sm:text-4xl">AI Design Assistant</h2>
             <p className="mt-4 text-lg text-foreground/80">
               Need some inspiration? Describe your dream room, and our AI will generate personalized design ideas and visuals for you.
             </p>
-            <Card className="mt-8 bg-card border-border/20">
+            <Card className="mt-8 bg-card/50 border-primary/20">
               <form onSubmit={handleSubmit}>
                 <CardHeader>
                   <CardTitle>Get Inspired</CardTitle>
@@ -96,7 +96,7 @@ const AIAssistant = () => {
           </div>
 
           <div className="flex items-center justify-center">
-            <Card className="w-full min-h-[400px] flex flex-col items-center justify-center bg-card border-border/20 transition-all duration-300">
+            <Card className="w-full min-h-[400px] flex flex-col items-center justify-center bg-card/50 border-primary/20 transition-all duration-300">
               {loading && (
                 <div className="flex flex-col items-center justify-center text-center p-8">
                   <Loader2 className="h-12 w-12 animate-spin text-accent" />

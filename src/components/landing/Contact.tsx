@@ -53,9 +53,9 @@ const Contact = () => {
 
   if (submitted) {
     return (
-      <section id="contact" className="w-full py-16 sm:py-24 bg-secondary">
+      <section id="contact" className="w-full py-16 sm:py-24 bg-secondary/30">
         <div className="container mx-auto max-w-2xl px-4">
-          <Card className="text-center p-8 bg-card border-border/20">
+          <Card className="text-center p-8 bg-card/50 border-primary/20">
             <CheckCircle className="mx-auto h-16 w-16 text-green-500" />
             <h2 className="mt-4 text-2xl font-bold font-headline">Thank You!</h2>
             <p className="mt-2 text-foreground/80">
@@ -69,11 +69,11 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="w-full py-16 sm:py-24 bg-secondary">
+    <section id="contact" className="w-full py-16 sm:py-24 bg-secondary/30">
       <div className="container mx-auto max-w-2xl px-4">
-        <Card className="bg-card border-border/20">
+        <Card className="bg-card/50 border-primary/20">
           <CardHeader className="text-center">
-            <CardTitle className="text-3xl font-bold font-headline text-primary sm:text-4xl">Book an Appointment</CardTitle>
+            <CardTitle className="text-3xl font-bold font-headline text-accent sm:text-4xl">Book an Appointment</CardTitle>
             <CardDescription className="mt-2 text-lg text-foreground/80">
               Ready to start your project? Fill out the form below to schedule a consultation.
             </CardDescription>
