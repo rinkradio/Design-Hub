@@ -46,8 +46,8 @@ const AIAssistant = () => {
 
   return (
     <section id="ai-assistant" className="w-full py-16 sm:py-24">
-      <div className="container mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+      <div className="container mx-auto max-w-7xl px-4">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-bold font-headline text-accent sm:text-4xl">AI Design Assistant</h2>
             <p className="mt-4 text-lg text-foreground/80">
@@ -104,7 +104,7 @@ const AIAssistant = () => {
                 </div>
               )}
               {error && !loading && (
-                <div className="p-8 w-full">
+                <div className="p-4 sm:p-8 w-full">
                 <Alert variant="destructive">
                   <AlertTitle>Error</AlertTitle>
                   <AlertDescription>{error}</AlertDescription>
@@ -113,10 +113,10 @@ const AIAssistant = () => {
               )}
               {!loading && !error && result && (
                 <>
-                  <CardHeader className="w-full">
-                    <CardTitle>Your Design Inspiration</CardTitle>
+                  <CardHeader className="w-full px-4 sm:px-6">
+                    <CardTitle className="text-xl sm:text-2xl">Your Design Inspiration</CardTitle>
                   </CardHeader>
-                  <CardContent className="w-full text-center space-y-4">
+                  <CardContent className="w-full text-center space-y-4 px-4 sm:px-6 pb-4 sm:pb-6">
                      {result.visualInspiration && (
                         <div className="relative aspect-video w-full overflow-hidden rounded-lg">
                             <Image src={result.visualInspiration} alt="AI-generated design inspiration" layout="fill" objectFit="cover" />

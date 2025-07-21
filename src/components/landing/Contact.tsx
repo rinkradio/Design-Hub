@@ -14,7 +14,7 @@ import { Loader2, CheckCircle } from 'lucide-react';
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
-  phone: z.string().min(10, { message: 'Please enter a valid phone number.' }).optional(),
+  phone: z.string().min(10, { message: 'Please enter a valid phone number.' }).optional().or(z.literal('')),
   message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
 });
 
@@ -39,12 +39,13 @@ const Contact = () => {
     console.log(values);
     setLoading(false);
     setSubmitted(true);
+    form.reset();
   }
 
   if (submitted) {
     return (
       <section id="contact" className="w-full py-16 sm:py-24 bg-secondary/30">
-        <div className="container mx-auto max-w-2xl">
+        <div className="container mx-auto max-w-2xl px-4">
           <Card className="text-center p-8 bg-card/50 border-primary/20">
             <CheckCircle className="mx-auto h-16 w-16 text-green-500" />
             <h2 className="mt-4 text-2xl font-bold font-headline">Thank You!</h2>
@@ -60,7 +61,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="w-full py-16 sm:py-24 bg-secondary/30">
-      <div className="container mx-auto max-w-2xl">
+      <div className="container mx-auto max-w-2xl px-4">
         <Card className="bg-card/50 border-primary/20">
           <CardHeader className="text-center">
             <CardTitle className="text-3xl font-bold font-headline text-accent sm:text-4xl">Book an Appointment</CardTitle>
