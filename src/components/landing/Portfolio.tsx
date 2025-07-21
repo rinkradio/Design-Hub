@@ -2,12 +2,12 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 const portfolioItems = [
-    { src: 'https://placehold.co/600x400.png', alt: 'Rustic kitchen design', hint: 'rustic kitchen' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Cozy balcony with hanging plants', hint: 'cozy balcony' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Scandinavian bedroom style', hint: 'scandinavian bedroom' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Bohemian chic patio', hint: 'bohemian patio' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Industrial-style home office', hint: 'industrial office' },
-    { src: 'https://placehold.co/600x400.png', alt: 'Luxury bathroom interior', hint: 'luxury bathroom' },
+    { src: '/images/portfolio-1.png', alt: 'Elegant living room with a neutral color palette', hint: 'elegant living room' },
+    { src: '/images/portfolio-2.png', alt: 'Modern kitchen with marble countertops', hint: 'modern kitchen' },
+    { src: '/images/portfolio-3.png', alt: 'Cozy bedroom with plush textiles', hint: 'cozy bedroom' },
+    { src: '/images/portfolio-4.png', alt: 'Luxurious bathroom with a standalone tub', hint: 'luxury bathroom' },
+    { src: '/images/portfolio-5.png', alt: 'Bohemian-style patio with greenery', hint: 'bohemian patio' },
+    { src: '/images/portfolio-6.png', alt: 'Minimalist home office setup', hint: 'minimalist office' },
 ];
 
 const Portfolio = () => {
@@ -24,14 +24,15 @@ const Portfolio = () => {
           {portfolioItems.map((item, index) => (
             <Card key={index} className="overflow-hidden group transition-shadow duration-300 hover:shadow-xl">
               <CardContent className="p-0">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  data-ai-hint={item.hint}
-                  width={600}
-                  height={400}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+                <div className="relative aspect-[4/3] w-full">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    data-ai-hint={item.hint}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
               </CardContent>
             </Card>
           ))}
