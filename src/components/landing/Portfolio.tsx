@@ -2,12 +2,15 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 const portfolioItems = [
-  { src: 'https://placehold.co/600x400.png', alt: 'A cozy, modern balcony with lush hanging plants and comfortable seating.', hint: 'cozy balcony' },
+  { src: 'https://placehold.co/600x400.png', alt: 'A bright, modern living room with minimalist furniture.', hint: 'modern living room' },
   { src: 'https://placehold.co/600x400.png', alt: 'A beautiful kitchen with rustic wooden cabinets and modern appliances.', hint: 'rustic kitchen' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Scandinavian bedroom style', hint: 'scandinavian bedroom' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Bohemian chic patio', hint: 'bohemian patio' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Industrial-style home office', hint: 'industrial office' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Luxury bathroom interior', hint: 'luxury bathroom' },
+  { src: 'https://placehold.co/600x400.png', alt: 'A cozy, modern balcony with lush hanging plants and comfortable seating.', hint: 'cozy balcony' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Scandinavian bedroom with clean lines and neutral colors.', hint: 'scandinavian bedroom' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Bohemian chic patio with layered textiles and natural materials.', hint: 'bohemian patio' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Industrial-style home office with exposed brick and metal accents.', hint: 'industrial office' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Luxury bathroom with marble countertops and a freestanding tub.', hint: 'luxury bathroom' },
+  { src: 'https://placehold.co/600x400.png', alt: 'Elegant dining room with a large wooden table and statement lighting.', hint: 'elegant dining' },
+  { src: 'https://placehold.co/600x400.png', alt: 'A welcoming entryway with a stylish console table and artwork.', hint: 'welcoming entryway' },
 ];
 
 const Portfolio = () => {
