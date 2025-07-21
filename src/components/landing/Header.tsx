@@ -5,35 +5,12 @@ import { Menu } from 'lucide-react';
 
 const Logo = () => (
   <Link href="/" className="flex items-center gap-2">
-     <svg width="250" height="70" viewBox="0 0 250 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <style>
-            {`
-                .ascher-text {
-                    font-family: 'Alegreya', serif;
-                    font-size: 24px;
-                    letter-spacing: 0.1em;
-                    fill: hsl(var(--primary));
-                }
-                .subtitle-text {
-                    font-family: 'Alegreya', serif;
-                    font-size: 10px;
-                    letter-spacing: 0.25em;
-                    fill: hsl(var(--primary));
-                }
-                .icon-path {
-                    fill: hsl(var(--primary));
-                }
-            `}
-        </style>
-        <g transform="translate(10, 0)">
-           
-        </g>
-        <text x="130" y="35" textAnchor="middle" className="ascher-text">
-            ASCHER DESIGNS
-        </text>
-        <text x="130" y="55" textAnchor="middle" className="subtitle-text">
-            INTERIOR DESIGN
-        </text>
+     <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+        <rect width="100%" height="100%" fill="#4CAF50"/> {/* Example green background */}
+        <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontFamily="sans-serif" fontSize="40" fill="#C7B299">ASCHER</text>
+        <text x="50%" y="65%" dominantBaseline="middle" textAnchor="middle" fontFamily="sans-serif" fontSize="20" fill="#C7B299">INTERIOR DESIGN</text>
+        {/* Simplified 'A' with window icon - conceptual representation */}
+        <path d="M150 30 L130 70 L170 70 Z M145 55 L155 55 L155 65 L145 65 Z" fill="#C7B29d9"/>
     </svg>
   </Link>
 );

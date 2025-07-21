@@ -2,12 +2,12 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 const portfolioItems = [
-    { src: '/images/portfolio-1.png', alt: 'Elegant living room with a neutral color palette', hint: 'elegant living room' },
-    { src: '/images/portfolio-2.png', alt: 'Modern kitchen with marble countertops', hint: 'modern kitchen' },
-    { src: '/images/portfolio-3.png', alt: 'Cozy bedroom with plush textiles', hint: 'cozy bedroom' },
-    { src: '/images/portfolio-4.png', alt: 'Luxurious bathroom with a standalone tub', hint: 'luxury bathroom' },
-    { src: '/images/portfolio-5.png', alt: 'Bohemian-style patio with greenery', hint: 'bohemian patio' },
-    { src: '/images/portfolio-6.png', alt: 'Minimalist home office setup', hint: 'minimalist office' },
+    { src: '/images/1.jpg', alt: 'Elegant living room with a neutral color palette', hint: 'elegant living room' },
+    { src: '/images/2.jpg', alt: 'Modern kitchen with marble countertops', hint: 'modern kitchen' },
+    { src: '/images/3.jpg', alt: 'Cozy bedroom with plush textiles', hint: 'cozy bedroom' },
+    { src: '/images/4.jpg', alt: 'Luxurious bathroom with a standalone tub', hint: 'luxury bathroom' },
+    { src: '/images/5.jpg', alt: 'Bohemian-style patio with greenery', hint: 'bohemian patio' },
+    { src: '/images/6.jpg', alt: 'Minimalist home office setup', hint: 'minimalist office' },
 ];
 
 const Portfolio = () => {
