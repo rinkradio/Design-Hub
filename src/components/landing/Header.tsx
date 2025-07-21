@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 
@@ -67,6 +67,9 @@ const Header = () => {
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
+            <SheetHeader>
+              <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
+            </SheetHeader>
             <div className="grid gap-4 py-6">
               <Link href="/" className="flex items-center gap-2 mb-4">
                  <Logo />
