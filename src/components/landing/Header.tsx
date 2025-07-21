@@ -9,27 +9,30 @@ const Logo = () => (
         <style>
             {`
                 .ascher-text {
-                    font-family: 'Inter', sans-serif;
+                    font-family: 'Alegreya', serif;
                     font-size: 24px;
-                    font-weight: 700;
                     letter-spacing: 0.1em;
-                    fill: hsl(var(--foreground));
+                    fill: hsl(var(--primary));
                 }
                 .subtitle-text {
-                    font-family: 'Inter', sans-serif;
+                    font-family: 'Alegreya', serif;
                     font-size: 10px;
                     letter-spacing: 0.25em;
-                    fill: hsl(var(--foreground));
+                    fill: hsl(var(--primary));
                 }
                 .icon-path {
                     fill: hsl(var(--primary));
                 }
             `}
         </style>
-        <path d="M10 20 Q20 10, 30 20 T50 20 L50 50 L10 50 Z" className="icon-path" />
-        <path d="M50 20 L70 20 L70 50 L50 50 Z" className="icon-path" />
-        <text x="155" y="45" textAnchor="middle" className="ascher-text">
-            ASCHER
+        <g transform="translate(10, 0)">
+           
+        </g>
+        <text x="130" y="35" textAnchor="middle" className="ascher-text">
+            ASCHER DESIGNS
+        </text>
+        <text x="130" y="55" textAnchor="middle" className="subtitle-text">
+            INTERIOR DESIGN
         </text>
     </svg>
   </Link>
@@ -74,8 +77,8 @@ const Header = () => {
                 <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
               </SheetHeader>
               <div className="grid gap-4 py-6">
-                 <div className="mb-4">
-                  <Logo />
+                 <div className="flex items-center gap-2 mb-4">
+                  <Logo/>
                 </div>
                 {navLinks.map((link) => (
                   <Link
