@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 
 const portfolioItems = [
-  { src: 'https://placehold.co/600x400.png', alt: 'Modern minimalist living room', hint: 'modern living room' },
+  { src: 'https://storage.googleapis.com/gcp-solutions-prod.appspot.com/static/ugc/24/05/1716301389-1311094032.png', alt: 'Cozy balcony with hanging plants', hint: 'cozy balcony' },
   { src: 'https://placehold.co/600x400.png', alt: 'Rustic kitchen design', hint: 'rustic kitchen' },
   { src: 'https://placehold.co/600x400.png', alt: 'Scandinavian bedroom style', hint: 'scandinavian bedroom' },
   { src: 'https://placehold.co/600x400.png', alt: 'Bohemian chic patio', hint: 'bohemian patio' },
