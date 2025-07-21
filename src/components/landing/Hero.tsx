@@ -11,7 +11,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
       <div className="container relative z-10 mx-auto max-w-7xl text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight font-headline text-accent sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="text-4xl font-extrabold tracking-tight font-headline text-primary sm:text-5xl md:text-6xl lg:text-7xl">
           Crafting Spaces, Inspiring Lives
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/80 md:text-xl">
