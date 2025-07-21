@@ -9,7 +9,7 @@ const Hero = () => {
       style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
       data-ai-hint="elegant living room"
     >
-      <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-background/80"></div>
       <div className="container relative z-10 mx-auto max-w-7xl text-center px-4">
         <h1 className="text-4xl font-extrabold tracking-tight font-headline text-primary sm:text-5xl md:text-6xl lg:text-7xl">
           Crafting Spaces, Inspiring Lives
@@ -18,10 +18,10 @@ const Hero = () => {
           At Ascher Designs, we transform your vision into reality with bespoke interior designs that blend elegance, comfort, and functionality.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button asChild size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild size="lg">
             <Link href="#contact">Book an Appointment</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
+          <Button asChild size="lg" variant="outline">
             <Link href="#portfolio">View Our Work</Link>
           </Button>
         </div>

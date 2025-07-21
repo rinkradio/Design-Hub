@@ -27,12 +27,12 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => (
-  <Card className="text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-card/50 border-primary/20">
+  <Card className="text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-card border-border/20">
     <CardHeader>
-      <div className="mx-auto mb-4 flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-full bg-primary/20 text-accent">
-        <Icon className="h-7 w-7 sm:h-8 sm:w-8" />
+      <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/20 text-accent">
+        <Icon className="h-8 w-8" />
       </div>
-      <CardTitle className="font-headline text-xl sm:text-2xl">{title}</CardTitle>
+      <CardTitle className="font-headline text-2xl">{title}</CardTitle>
     </CardHeader>
     <CardContent>
       <p className="text-foreground/70">{description}</p>
@@ -45,7 +45,7 @@ const Services = () => {
     <section id="services" className="w-full py-16 sm:py-24">
       <div className="container mx-auto max-w-7xl px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold font-headline text-accent sm:text-4xl">Our Expertise</h2>
+          <h2 className="text-3xl font-bold font-headline text-primary sm:text-4xl">Our Expertise</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
             We offer a complete range of services to bring your vision to life.
           </p>
