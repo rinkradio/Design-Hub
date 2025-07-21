@@ -9,7 +9,7 @@ const Hero = () => {
       style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
       data-ai-hint="elegant living room"
     >
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
       <div className="container relative z-10 mx-auto max-w-7xl text-center px-4">
         <h1 className="text-4xl font-extrabold tracking-tight font-headline text-primary sm:text-5xl md:text-6xl lg:text-7xl">
           Crafting Spaces, Inspiring Lives
