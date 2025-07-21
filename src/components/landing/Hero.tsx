@@ -6,8 +6,8 @@ const Hero = () => {
     <section
       id="hero"
       className="relative w-full py-20 md:py-32 bg-cover bg-center"
-      style={{ backgroundImage: "url('')" }}
-      data-ai-hint="elegant living room"
+      style={{ backgroundImage: "url('https://placehold.co/1920x1080.png')" }}
+      data-ai-hint="design sketch"
     >
       <div className="absolute inset-0 bg-background/90 backdrop-blur-sm"></div>
       <div className="container relative z-10 mx-auto max-w-7xl text-center px-4">
