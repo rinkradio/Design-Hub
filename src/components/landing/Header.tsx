@@ -9,30 +9,27 @@ const Logo = () => (
         <style>
             {`
                 .ascher-text {
-                    font-family: 'Alegreya', serif;
+                    font-family: 'Inter', sans-serif;
                     font-size: 24px;
+                    font-weight: 700;
                     letter-spacing: 0.1em;
-                    fill: hsl(var(--primary));
+                    fill: hsl(var(--foreground));
                 }
                 .subtitle-text {
-                    font-family: 'Alegreya', serif;
+                    font-family: 'Inter', sans-serif;
                     font-size: 10px;
                     letter-spacing: 0.25em;
-                    fill: hsl(var(--primary));
+                    fill: hsl(var(--foreground));
                 }
                 .icon-path {
                     fill: hsl(var(--primary));
                 }
             `}
         </style>
-        <g transform="translate(10, 0)">
-            {/* You can place an icon/shape here if you want */}
-        </g>
-        <text x="130" y="35" textAnchor="middle" className="ascher-text">
-            ASCHER DESIGNS
-        </text>
-        <text x="130" y="55" textAnchor="middle" className="subtitle-text">
-            INTERIOR DESIGN
+        <path d="M10 20 Q20 10, 30 20 T50 20 L50 50 L10 50 Z" className="icon-path" />
+        <path d="M50 20 L70 20 L70 50 L50 50 Z" className="icon-path" />
+        <text x="155" y="45" textAnchor="middle" className="ascher-text">
+            ASCHER
         </text>
     </svg>
   </Link>
