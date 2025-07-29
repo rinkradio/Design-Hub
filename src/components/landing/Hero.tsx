@@ -15,7 +15,7 @@ const Hero = () => {
           Crafting Spaces, Inspiring Lives
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
-          At Ascher Designs, we transform your vision into reality with bespoke interior designs that blend elegance, comfort, and functionality.
+          At Ritik Designs, we transform your vision into reality with bespoke interior designs that blend elegance, comfort, and functionality.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="w-full sm:w-auto">

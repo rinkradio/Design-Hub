@@ -7,7 +7,7 @@ const Logo = () => (
   <Link href="/" className="flex items-center gap-2">
      <svg width="160" height="40" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" className="h-10 w-auto">
       <text x="0" y="25" fontFamily="Alegreya, serif" fontSize="24" fontWeight="bold" fill="hsl(var(--primary))" dominantBaseline="central">
-        ASCHER
+        RITIK
       </text>
       <text x="0" y="42" fontFamily="Alegreya, serif" fontSize="12" fill="hsl(var(--foreground))" dominantBaseline="central">
         INTERIOR DESIGN

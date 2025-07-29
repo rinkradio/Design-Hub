@@ -41,10 +41,10 @@ export async function sendContactEmail(data: ContactFormInputs): Promise<{ succe
 
   try {
     const { data: emailData, error } = await resend.emails.send({
-      from: 'Ascher Designs <onboarding@resend.dev>',
+      from: 'Ritik Designs <onboarding@resend.dev>',
       to: [toEmail],
       reply_to: email,
-      subject: 'New Inquiry from Ascher Designs Website',
+      subject: 'New Inquiry from Ritik Designs Website',
       html: `
         <h1>New Contact Form Submission</h1>
         <p><strong>Name:</strong> ${name}</p>
